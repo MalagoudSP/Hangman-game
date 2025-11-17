@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
-import MainMenu from "./features/mainMenu/components/MainMenu";
+import MainMenu from "./features/mainMenu/MainMenu";
 import HowToPlay from "./features/howToPlay/HowToPlay";
+import CategoryPick from "./features/categoryPick/CategoryPick";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<MainMenu />} />
         <Route path="/how-to-play" element={<HowToPlay />} />
+        <Route path="/category-pick" element={<CategoryPick />} />
       </Routes>
     </div>
   );

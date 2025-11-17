@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
-import Button from "../../../UI/Button";
-import LogoIcon from "../../../UI/icons/LogoIcon";
-import PlayButton from "../../../UI/PlayButton";
+import Button from "../../UI/Button";
+import LogoIcon from "../../UI/icons/LogoIcon";
+import PlayButton from "../../UI/PlayButton";
 
 function MainMenu() {
   return (
@@ -15,7 +15,9 @@ function MainMenu() {
           className="gradient-1 flex h-[481px] w-[324px] flex-col items-center justify-center rounded-[48px] md:h-[500px] md:w-[592px]"
         >
           <div className="mt-14.5 flex flex-col gap-14">
-            <PlayButton />
+            <NavLink to={"/category-pick"} className="mx-auto">
+              <PlayButton />
+            </NavLink>
             <NavLink to={"/how-to-play"}>
               <Button>how to play</Button>
             </NavLink>
