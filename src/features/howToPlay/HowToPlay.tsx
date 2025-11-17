@@ -1,0 +1,81 @@
+import { NavLink } from "react-router";
+import MenuButton from "../../UI/MenuButton";
+
+function HowToPlay() {
+  return (
+    <div className="pb-24.5">
+      <div className="flex items-center justify-between px-6.5 pt-8 md:justify-start md:pt-15 md:pr-12 md:pl-10">
+        <NavLink to={"/"}>
+          <MenuButton type="back" />
+        </NavLink>
+        <p className="text-preset-6 transparent color-gradient-2 mx-auto bg-clip-text text-transparent uppercase md:text-[104px] md:tracking-[-1px]">
+          how to play
+        </p>
+      </div>
+      <div className="mt-20 flex flex-col gap-6 px-6.5 md:mt-25 md:pr-12 md:pl-10">
+        <div className="bg-neutral-0 flex flex-col gap-4 rounded-[20px] p-8 px-10 md:flex-row md:items-center md:gap-10 md:rounded-[40px]">
+          <p className="text-preset-4 hidden text-blue-600 md:block">01</p>
+          <div className="flex items-center gap-4 md:flex-col md:items-start">
+            <p className="text-preset-10 text-blue-600 md:hidden">01</p>
+            <p className="text-preset-10 text-indigo-600 uppercase md:text-[40px] md:tracking-[1.75px]">
+              choose a category
+            </p>
+            <p className="text-preset-11 hidden text-indigo-400 md:block">
+              First, choose a word category, like animals or movies. The
+              computer then randomly selects a secret word from that topic and
+              shows you blanks for each letter of the word.
+            </p>
+          </div>
+
+          <p className="text-preset-12 text-indigo-400 md:hidden">
+            First, choose a word category, like animals or movies. The computer
+            then randomly selects a secret word from that topic and shows you
+            blanks for each letter of the word.
+          </p>
+        </div>
+        <div className="bg-neutral-0 flex flex-col gap-4 rounded-[20px] p-8 px-10 md:flex-row md:items-center md:gap-10 md:rounded-[40px]">
+          <p className="text-preset-4 hidden text-blue-600 md:block">02</p>
+          <div className="flex items-center gap-4 md:flex-col md:items-start">
+            <p className="text-preset-10 text-blue-600 md:hidden">02</p>
+            <p className="text-preset-10 text-indigo-600 uppercase md:text-[40px] md:tracking-[1.75px]">
+              guess letters
+            </p>
+            <p className="text-preset-11 hidden text-indigo-400 md:block">
+              Take turns guessing letters. The computer fills in the relevant
+              blank spaces if your guess is correct. If it’s wrong, you lose
+              some health, which empties after eight incorrect guesses.
+            </p>
+          </div>
+
+          <p className="text-preset-12 text-indigo-400 md:hidden">
+            Take turns guessing letters. The computer fills in the relevant
+            blank spaces if your guess is correct. If it’s wrong, you lose some
+            health, which empties after eight incorrect guesses.
+          </p>
+        </div>
+        <div className="bg-neutral-0 flex flex-col gap-4 rounded-[20px] p-8 px-10 md:flex-row md:items-center md:gap-10 md:rounded-[40px]">
+          <p className="text-preset-4 hidden text-blue-600 md:block">03</p>
+          <div className="flex items-center gap-4 md:flex-col md:items-start">
+            <p className="text-preset-10 text-blue-600 md:hidden">03</p>
+            <p className="text-preset-10 text-indigo-600 uppercase md:text-[40px] md:tracking-[1.75px]">
+              win or lose
+            </p>
+            <p className="text-preset-11 hidden text-indigo-400 md:block">
+              You win by guessing all the letters in the word before your health
+              runs out. If the health bar empties before you guess the word, you
+              lose.
+            </p>
+          </div>
+
+          <p className="text-preset-12 text-indigo-400 md:hidden">
+            You win by guessing all the letters in the word before your health
+            runs out. If the health bar empties before you guess the word, you
+            lose.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default HowToPlay;
