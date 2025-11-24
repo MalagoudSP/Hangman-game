@@ -70,6 +70,22 @@ function Game() {
     }
   }, [currentHealth]);
 
+  useEffect(() => {
+    if (!letters) return;
+    setKeyInputState((inputs) =>
+      inputs.map((input) => {
+        const sameLetters = letters?.filter(
+          (letter) => letter.letter.toUpperCase() === input.key,
+        );
+
+        const anyHidden = sameLetters?.some((letter) => !letter.show);
+        return !anyHidden && sameLetters?.length > 0
+          ? { ...input, active: false }
+          : input;
+      }),
+    );
+  }, [letters, setKeyInputState]);
+
   function handleNextWord() {
     if (words) {
       const randomWord = getRandomWord(words);
