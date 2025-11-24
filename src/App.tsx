@@ -5,9 +5,6 @@ import CategoryPick from "./features/categoryPick/CategoryPick";
 import Game from "./features/game/Game";
 import DifficultyPick from "./features/difficultyPick/DifficultyPick";
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect } from "react";
-const wrongSound = new Audio("/sounds/wrong.mp3");
-wrongSound.load();
 
 function App() {
   const location = useLocation();
