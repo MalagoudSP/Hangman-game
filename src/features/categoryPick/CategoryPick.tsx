@@ -24,9 +24,10 @@ function CategoryPick() {
         {categories.map((category, i) => (
           <NavLink key={i} to={`/difficulty?category=${category}`}>
             <motion.div
+              style={{ willChange: "transform" }}
               initial={{ y: -500 }}
               animate={{ y: 0 }}
-              transition={{ duration: i * 0.15 }}
+              transition={{ duration: i * 0.15, ease: "easeOut" }}
             >
               <CategoryItem>{category.replace("_", " ")}</CategoryItem>
             </motion.div>

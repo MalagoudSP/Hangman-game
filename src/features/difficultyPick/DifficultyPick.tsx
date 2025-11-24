@@ -19,9 +19,10 @@ function DifficultyPick() {
             to={`/game?category=${category}&difficulty=${difficulty}`}
           >
             <motion.div
+              style={{ willChange: "transform" }}
               initial={{ y: -500 }}
               animate={{ y: 0 }}
-              transition={{ duration: i * 0.3 }}
+              transition={{ duration: i * 0.3, ease: "easeOut" }}
             >
               <DifficultyItem>{difficulty}</DifficultyItem>
             </motion.div>

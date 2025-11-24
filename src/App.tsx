@@ -18,10 +18,11 @@ function App() {
             path="/"
             element={
               <motion.div
-                initial={{ y: "-100vh" }}
+                style={{ willChange: "transform" }}
+                initial={{ y: "-100%" }}
                 animate={{ y: 0 }}
-                transition={{ type: "keyframes", duration: 0.35 }}
-                exit={{ y: "-100vh" }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                exit={{ y: "-100%" }}
               >
                 <MainMenu />
               </motion.div>
@@ -32,10 +33,11 @@ function App() {
             path="/how-to-play"
             element={
               <motion.div
-                initial={{ y: "-100vh" }}
+                style={{ willChange: "transform" }}
+                initial={{ y: "-100%" }}
                 animate={{ y: 0 }}
-                transition={{ type: "keyframes", duration: 0.35 }}
-                exit={{ y: "-100vh" }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                exit={{ y: "-100%" }}
               >
                 <HowToPlay />
               </motion.div>
@@ -45,10 +47,11 @@ function App() {
             path="/category-pick"
             element={
               <motion.div
-                initial={{ y: "-100vh" }}
+                style={{ willChange: "transform" }}
+                initial={{ y: "-100%" }}
                 animate={{ y: 0 }}
-                transition={{ type: "keyframes", duration: 0.35 }}
-                exit={{ y: "-100vh" }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                exit={{ y: "-100%" }}
               >
                 <CategoryPick />
               </motion.div>
@@ -58,10 +61,11 @@ function App() {
             path="/difficulty"
             element={
               <motion.div
-                initial={{ y: "-100vh" }}
+                style={{ willChange: "transform" }}
+                initial={{ y: "-100%" }}
                 animate={{ y: 0 }}
-                transition={{ type: "keyframes", duration: 0.35 }}
-                exit={{ y: "-100vh" }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                exit={{ y: "-100%" }}
               >
                 <DifficultyPick />
               </motion.div>
@@ -71,10 +75,11 @@ function App() {
             path="/game"
             element={
               <motion.div
-                initial={{ x: "-100vw" }}
+                style={{ willChange: "transform" }}
+                initial={{ x: "-100%" }}
                 animate={{ x: 0 }}
-                transition={{ type: "keyframes", duration: 0.35 }}
-                exit={{ x: "-100vw" }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                exit={{ x: "-100%" }}
               >
                 <Game />
               </motion.div>
